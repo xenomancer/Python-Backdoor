@@ -1,5 +1,9 @@
-pywin32
 pyinstaller
-pyscreeze
+pyscreeze; platform_system != "Linux"
+Xlib; platform_system == "Linux"
 pynput
-WMI
+cryptography
+pillow
+pywin32; platform_system == "Windows"
+wmi; platform_system == "Windows"
+future
